@@ -1,6 +1,4 @@
-package com.mbanq.card.exception;
 
-import static com.mbanq.card.exception.CardException.*;
 
 public class CardExceptionBuilder {
 
@@ -44,13 +42,6 @@ public class CardExceptionBuilder {
 }
 
 
-package com.mbanq.card.exception;
-
-import lombok.Getter;
-import lombok.Setter;
-
-@Getter
-@Setter
 public final class CardException extends RuntimeException {
 
     public enum  CardExceptionType {
@@ -76,15 +67,6 @@ public final class CardException extends RuntimeException {
 }
 
 
-
-package com.mbanq.card.validation;
-
-import com.mbanq.card.domain.Card;
-import com.mbanq.card.domain.CardNetwork;
-import com.mbanq.card.exception.CardExceptionBuilder;
-import org.apache.commons.lang3.EnumUtils;
-
-import java.util.Set;
 
 public class CardUtils {
     public final static Set<Integer> VISA_VALID_DIGIT_LENGTHS = Set.of(16);
